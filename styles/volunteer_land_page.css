@@ -1,0 +1,809 @@
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('../fonts/SteinbeckRegular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('../fonts/SteinbeckItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BasisGrotesquePro';
+  src: url('../fonts/BasisGrotesquePro-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;s
+}
+
+
+h1 {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.main {
+  padding: 0px, 60px;
+  background-color: #233363;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  padding: 60px 50px 0px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar p a img {
+  height: 70px;
+}
+
+.navbar .cta_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.navbar .cta_button a {
+  font-family: Steinbeck;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px;
+  border: 1px solid #FAF19D;
+  border-radius: 40px;
+  color: #FAF19D;
+  margin: 0px 20px;
+}
+
+.main .features {
+  display: flex;
+  margin-left: 10vw;
+  height: 80vh;
+}
+
+.main .features h1 {
+  color: #FAF19D;
+  width: 973px;
+  align-self: center;
+}
+
+/* Про сервис */
+.first_service {
+  padding: 0px, 60px;
+  background-color: #FAF19D;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first_service .about_categories {
+  display: flex;
+  margin-left: 10vw;
+  margin-bottom: 100px;
+}
+
+.first_service .about_categories h1 {
+  color: #233363;
+  width: 973px;
+  align-self: center;
+}
+
+.first_service .categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+  margin: 0px 60px;
+}
+
+.first_service .categories h3 {
+  flex-grow: 6;
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: #233363;
+  text-align: center;
+  padding: 40px;
+  margin: 10px;
+}
+
+.first_service .categories .category_green {
+  background: #CACC4E;
+  border-radius: 40px;
+}
+
+.first_service .categories .category_red {
+  background: #E85A5A;
+  border-radius: 40px;
+}
+
+.first_service .categories .category_blue {
+  background: #88E5DA;
+  border-radius: 40px;
+}
+
+.first_service .categories .category_orange {
+  background: #F68E5F;
+  border-radius: 40px;
+}
+
+/* Свобода волонтерства */
+.freedom_volunteer {
+  padding: 0px, 60px;
+  height: 190vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #233363;
+}
+
+.limits–volunteering_about, .choice_about {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.limits–volunteering_about h1 {
+  color: #FAF19D;
+  width: 973px;
+  margin-left: 10vw;
+}
+
+.limits–volunteering .affairs img {
+  height: 450px;
+  margin-left: 10vw;
+}
+
+/* Возможности */
+.choice .choice_about h1 {
+  color: #FAF19D;
+  width: 973px;
+  margin-left: 10vw;
+}
+
+.choice .timeline {
+  display: flex;
+  margin-left: 10vw;
+}
+
+.choice .start_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 20vw;
+}
+
+.choice .start_button a {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px;
+  border: 1px solid #FAF19D;
+  border-radius: 40px;
+  color: #FAF19D;
+  margin: 0px 20px;
+}
+
+.about_possibilities {
+  height: 110vh;
+  background: #F68E5F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about_possibilities .options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px 200px;
+}
+
+.about_possibilities .options .dating {
+  background: url('../images/options-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  background-size: auto;
+  background-origin: border-box;
+}
+
+.about_possibilities .options h4 {
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  /* vertical-align: middle; */
+  line-height: 105%;
+  text-align: center;
+  align-items: center;
+  color: #233363;
+  padding: 100px;
+  justify-content: center;
+}
+
+.about_possibilities .options div {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.about_possibilities .options div:nth-child(1) {
+  background-image: url('../images/options-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 385px;
+}
+
+.about_possibilities .options div:nth-child(2) {
+  background-image: url('../images/options-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 385px;
+}
+
+.about_possibilities .options div:nth-child(3) {
+  background-image: url('../images/options-3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 385px;
+}
+
+.about_possibilities .options div:nth-child(4) {
+  background-image: url('../images/options-4.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 385px;
+}
+
+.about_possibilities .options div:nth-child(5) {
+  background-image: url('../images/options-5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 385px;
+}
+
+.about_possibilities .options div:nth-child(6) {
+  background-image: url('../images/options-6.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 385px;
+}
+
+.personal_account {
+  background: #233363;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personal_account .account_info h1 {
+  color: #FAF19D;
+  width: 900px;
+  margin-left: 10vw;
+  margin-bottom: 100px;
+}
+
+/* Кабинет волонтера */
+.account_objects {
+  display: flex;
+  flex-direction: row;
+  margin-left: 152px;
+  margin-right: 20vw;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.account_objects .account_subscription, .account_objects .account_favorites, .account_objects .account_categories  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #FAF19D;
+  border-radius: 40px;
+  padding: 10px 15px;
+  margin: 20px;
+  flex-grow: 6;
+  height: 60px;
+}
+
+.account_objects p {
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #233363;
+  text-decoration: none;
+}
+
+.account_objects .account_subscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.account_objects .account_subscribe a {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 12px;
+  border: 1px solid #233363;
+  border-radius: 40px;
+  color: #233363;
+}
+
+.personal_account .join_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 20vw;
+}
+
+.personal_account .join_button a {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px;
+  border: 1px solid #FAF19D;
+  border-radius: 40px;
+  color: #FAF19D;
+  margin: 0px 20px;
+}
+
+/* Безопасность */
+.security {
+  background: #CACC4E;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.security .security_about h1 {
+  color: #233363;
+  width: 973px;
+  margin-left: 10vw;
+  margin-bottom: 50px;
+}
+
+.security .security_about p {
+  color: #233363;
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 10vw;
+  margin-bottom: 100px;
+  width: 700px;
+  font-size: 25px;
+  line-height: 105%;
+}
+
+.security .security_posts img {
+  height: 450px;
+  margin-left: 10vw;
+}
+
+/* Партнертсво */
+.partnership {
+  background: #233363;
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.partnership .partnership_about {
+  margin-left: 10vw;
+}
+
+.partnership .partnership_about h1 {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 70px;
+  color: #FAF19D;
+  width: 60vw;
+  margin-bottom: 40px;
+}
+
+.partnership .partnership_about p {
+  font-family: Basis Grotesque Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 105%;
+  color: #FAF19D;
+  width: 50vw;
+}
+
+.partnership .partnership_statistics {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+}
+
+.partnership .partnership_statistics h1 {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 70px;
+  color: #FAF19D;
+  width: 20vw;
+  margin-bottom: 10px;
+}
+
+.statistics_vol, .statistics_org, .statistics_affairs, .statistics_money, .statistics_activities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.statistics_vol h3, .statistics_org h3, .statistics_affairs h3, .statistics_money h3, .statistics_activities h3 {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  padding-right: 20vw;
+  font-size: 30px;
+  line-height: 30px;
+  width: 50vw;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #233363;
+  height: 100px;
+  background: #FAF19D;
+  border-radius: 40px;
+}
+
+.statistics_vol_n, .statistics_org_n, .statistics_affairs_n, .statistics_money_n, .statistics_activities_n {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics_vol_n h1, .statistics_org_n h1, .statistics_affairs_n h1, .statistics_money_n h1 , .statistics_activities_n h1 {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 70px;
+  color: #FAF19D;
+}
+
+.statistics_vol_n p, .statistics_org_n p, .statistics_affairs_n p, .statistics_money_n p , .statistics_activities_n p {
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 105%;
+  color: #FAF19D;
+}
+
+.partnership .support h1 {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 70px;
+  color: #FAF19D;
+  width: 70vw;
+  margin-left: 10vw;
+  margin-bottom: 40px;
+}
+
+.partnership .support .partner_logo_icn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 10vh;
+}
+
+.partnership .support .partner_logo_icn div img {
+  padding-left: 40px;
+  vertical-align: middle;
+}
+
+/* Комьюнити */
+.community {
+  background: #FAF19D;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.community .community_about h1 {
+  color: #233363;
+  width: 973px;
+  margin-left: 10vw;
+  margin-bottom: 50px;
+}
+
+.community .community_about p {
+  color: #233363;
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 10vw;
+  margin-bottom: 100px;
+  width: 700px;
+  font-size: 25px;
+  line-height: 105%;
+}
+
+.community .community_posts img {
+  height: 450px;
+  margin-left: 10vw;
+}
+
+/* Об органиазциях */
+.about_org {
+  background: #CACC4E;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about_org h1 {
+  margin-left: 10vw;
+  padding-right: 20vw;
+  margin-bottom: 100px;
+  color: #233363;
+}
+
+.about_org .read_about_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 20vw;
+}
+
+.about_org .read_about_button a {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px;
+  border: 1px solid #233363;
+  border-radius: 40px;
+  color: #233363;
+  margin: 0px 20px;
+}
+
+/* CTA */
+.call_to_action {
+  background: #233363;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call_to_action h1 {
+  color: #FAF19D;
+  margin-left: 10vw;
+  margin-bottom: 100px;
+  width: 700px;
+}
+
+.call_to_action p {
+  color: #FAF19D;
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 10vw;
+  margin-bottom: 100px;
+  width: 700px;
+  font-size: 25px;
+  line-height: 105%;
+}
+
+.call_to_action .cta_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 20vw;
+}
+
+.call_to_action .cta_button a {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px;
+  border: 1px solid #FAF19D;
+  border-radius: 40px;
+  color: #FAF19D;
+  margin: 0px 20px;
+}
+
+/* Футер */
+footer {
+  background: #233363;
+  height: 95vh;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .write_us {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+footer .write_us p {
+  color: #FAF19D;
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 100px;
+  width: 700px;
+  font-size: 25px;
+  line-height: 105%;
+}
+
+footer .write_us a {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px;
+  border: 1px solid #FAF19D;
+  border-radius: 40px;
+  color: #FAF19D;
+  margin: 0px 20px;
+}
+
+footer .main_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .main_links .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60vw;
+}
+footer .main_links .navigation .service_navigation, footer .main_links .navigation .navigation_contacts, footer .main_links .navigation .navigation_s_network {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .main_links .navigation p {
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 105%;
+  color: rgba(250, 241, 157, 0.6);
+}
+
+footer .main_links .navigation a {
+  padding-top: 20px;
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 105%;
+  color: #FAF19D;
+  text-decoration: none;
+}
+
+footer .main_links .contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .main_links .contact_form h3 {
+  font-family: 'Basis Grotesque Pro';
+  width: 427px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 105%;
+  color: #FAF19D;
+  margin-bottom: 40px;
+}
+
+footer .main_links .contact_form .contact_form_email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  background: #FAF19D;
+  border: 1px solid #FAF19D;
+  border-radius: 40px;
+}
+
+footer .main_links .contact_form .contact_form_email p input {
+  background: #FAF19D;
+  font-family: Steinbeck;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(35, 51, 99, 0.5);
+  border: none;
+}
+
+footer .main_links .contact_form .contact_form_email p #subscriber_email:focus {
+  outline: none;
+}
+
+footer .footer_data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+footer .footer_data p {
+  font-family: 'Basis Grotesque Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 105%;
+  color: rgba(250, 241, 157, 0.6);
+}
