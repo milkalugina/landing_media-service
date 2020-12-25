@@ -19,8 +19,13 @@
   font-weight: normal;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  min-width: 100vw;
 }
 
 h1 {
@@ -29,6 +34,114 @@ h1 {
   font-weight: normal;
   font-size: 60px;
   line-height: 60px;
+}
+
+.objects {
+  position: relative;
+  box-sizing: border-box;
+  height: 0;
+}
+
+.objects img {
+  overflow-x: hidden !important;
+}
+
+.objects img:nth-child(1) {
+  position: relative;
+  height: 600px;
+  left: 70vw;
+  top: 15vh;
+}
+
+.objects img:nth-child(2) {
+  position: absolute;
+  height: 400px;
+  left: 10vw;
+  top: 75vh;
+}
+
+.objects img:nth-child(3) {
+  position: absolute;
+  height: 200px;
+  left: 71vw;
+  top: 15vh;
+}
+
+.objects img:nth-child(4) {
+  position: absolute;
+  height: 400px;
+  left: 63vw;
+  top: 53vh;
+}
+
+.objects img:nth-child(5) {
+  position: absolute;
+  height: 150px;
+  left: 70vw;
+  top: 140vh;
+}
+
+.objects img:nth-child(6) {
+  position: absolute;
+  height: 400px;
+  left: -11vw;
+  top: 83vh;
+}
+
+.objects img:nth-child(7) {
+  position: absolute;
+  height: 300px;
+  left: -7vw;
+  top: 158vh;
+}
+
+.objects img:nth-child(8) {
+  position: absolute;
+  height: 400px;
+  left: -10vw;
+  top: 382vh;
+}
+
+.objects img:nth-child(9) {
+  position: absolute;
+  height: 300px;
+  left: 86vw;
+  top: 418vh;
+}
+
+.objects img:nth-child(10) {
+  position: absolute;
+  height: 600px;
+  left: 54vw;
+  top: 524vh;
+}
+
+.objects img:nth-child(11) {
+  position: absolute;
+  height: 600px;
+  left: -10vw;
+  top: 481vh;
+}
+
+.objects img:nth-child(12) {
+  position: absolute;
+  height: 300px;
+  left: 82vw;
+  top: 525vh;
+}
+
+.objects img:nth-child(13) {
+  position: absolute;
+  height: 250px;
+  left: 81vw;
+  top: 576vh;
+}
+
+.objects img:nth-child(14) {
+  position: absolute;
+  height: 600px;
+  left: -10vw;
+  top: 562vh;
 }
 
 .main {
@@ -135,9 +248,10 @@ h1 {
 .what_to_do {
   display: flex;
   flex-direction: column;
-  height: 210vh;
+  height: 250vh;
   background: #F68E5F;
   padding-bottom: 50px;
+  overflow-x: hidden;
 }
 
 .what_to_do p:nth-child(1) {
@@ -180,6 +294,7 @@ h1 {
   margin-left: 10vw;
   width: 40vw;
 }
+
 
 .what_to_do img {
   height: 450px;

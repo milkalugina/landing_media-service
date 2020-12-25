@@ -19,17 +19,13 @@
   font-weight: normal;
 }
 
-*, *:after, *:before {
-  box-sizing: border-box;
-}
 html {
   overflow-x: hidden !important;
 }
 
 body {
   overflow-x: hidden !important;
-  width: 100vw;
-  display: block;
+  min-width: 100vw;
 }
 
 h1 {
@@ -42,7 +38,9 @@ h1 {
 
 /* Изображения */
 .objects {
-  position: absolute;
+  position: relative;
+  box-sizing: border-box;
+  height: 0;
 }
 
 .objects img {
@@ -50,7 +48,7 @@ h1 {
 }
 
 .objects img:nth-child(1) {
-  position: absolute;
+  position: relative;
   height: 600px;
   left: 70vw;
   top: 15vh;
@@ -72,15 +70,15 @@ h1 {
 
 .objects img:nth-child(4) {
   position: absolute;
-  height: 350px;
-  left: 65.5vw;
+  height: 400px;
+  left: 63vw;
   top: 53vh;
 }
 
 .objects img:nth-child(5) {
   position: absolute;
   height: 300px;
-  left: 71vw;
+  left: 74.5vw;
   top: 85vh;
 }
 
@@ -102,7 +100,7 @@ h1 {
   position: absolute;
   height: 300px;
   left: 90vw;
-  top: 400vh;
+  top: 385.8vh;
 }
 
 .objects img:nth-child(9) {
@@ -127,6 +125,86 @@ h1 {
   left: -8vw;
   top: 580vh;
   transform: rotate(40deg);
+}
+
+.objects img:nth-child(12) {
+  position: absolute;
+  height: 200px;
+  left: 78vw;
+  top: 770vh;
+  transform: rotate(40deg);
+}
+
+.objects img:nth-child(13) {
+  position: absolute;
+  height: 300px;
+  left: -8vw;
+  top: 1046vh;
+  transform: rotate(5deg);
+}
+
+.objects img:nth-child(14) {
+  position: absolute;
+  height: 500px;
+  left: 85vw;
+  top: 1046vh;
+  transform: rotate(80deg);
+}
+
+.objects img:nth-child(15) {
+  position: absolute;
+  height: 300px;
+  left: -12vw;
+  top: 1200vh;
+  transform: rotate(80deg);
+}
+
+.objects img:nth-child(16) {
+  position: absolute;
+  height: 200px;
+  left: 80vw;
+  top: 1200vh;
+  transform: rotate(10deg);
+}
+
+.objects img:nth-child(17) {
+  position: absolute;
+  height: 500px;
+  left: 60vw;
+  top: 1267vh;
+  transform: rotate(10deg);
+}
+
+.objects img:nth-child(18) {
+  position: absolute;
+  height: 500px;
+  left: 77vw;
+  top: 1247vh;
+  transform: rotate(10deg);
+}
+
+.objects img:nth-child(19) {
+  position: absolute;
+  height: 300px;
+  left: 91vw;
+  top: 1346vh;
+  transform: rotate(10deg);
+}
+
+.objects img:nth-child(20) {
+  position: absolute;
+  height: 250px;
+  left: 80vw;
+  top: 1316vh;
+  transform: rotate(10deg);
+}
+
+.objects img:nth-child(21) {
+  position: absolute;
+  height: 500px;
+  left: -10vw;
+  top: 1293vh;
+  transform: rotate(10deg);
 }
 
 /* 1 блок */
@@ -249,11 +327,22 @@ h1 {
 /* Свобода волонтерства */
 .freedom_volunteer {
   padding: 0px, 60px;
-  height: 190vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background: #233363;
+}
+
+.limits–volunteering{
+  margin-bottom: 250px;
+}
+
+.limits–volunteering_about {
+  margin-top: 200px;
+}
+
+.choice_about {
+  margin-bottom: 200px;
 }
 
 .limits–volunteering_about, .choice_about {
@@ -493,10 +582,14 @@ h1 {
 /* Безопасность */
 .security {
   background: #CACC4E;
-  height: 110vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.security .security_about {
+  margin-top: 170px;
 }
 
 .security .security_about h1 {
@@ -517,6 +610,9 @@ h1 {
   font-size: 25px;
   line-height: 105%;
 }
+.security .security_posts {
+  margin-bottom: 150px;
+}
 
 .security .security_posts img {
   height: 450px;
@@ -526,16 +622,18 @@ h1 {
 /* Партнертсво */
 .partnership {
   background: #233363;
-  height: 220vh;
+  height: 240vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-top: 200px;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 .partnership .partnership_about {
   margin-left: 10vw;
+  margin-bottom: 140px;
+  padding-top: 200px;
 }
 
 .partnership .partnership_about h1 {
@@ -563,6 +661,7 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-left: 10vw;
+  margin-bottom: 140px;
 }
 
 .partnership .partnership_statistics h1 {
@@ -623,6 +722,10 @@ h1 {
   color: #FAF19D;
 }
 
+.partnership .support {
+  margin-bottom: 200px;
+}
+
 .partnership .support h1 {
   font-family: 'Steinbeck';
   font-style: normal;
@@ -632,7 +735,7 @@ h1 {
   color: #FAF19D;
   width: 70vw;
   margin-left: 10vw;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .partnership .support .partner_logo_icn {
@@ -655,6 +758,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 170px;
 }
 
 .community .community_about h1 {
@@ -679,6 +783,7 @@ h1 {
 .community .community_posts img {
   height: 450px;
   margin-left: 10vw;
+  margin-bottom: 150px;
 }
 
 /* Об органиазциях */
@@ -904,4 +1009,16 @@ footer .footer_data p {
   font-size: 20px;
   line-height: 105%;
   color: rgba(250, 241, 157, 0.6);
+}
+
+
+
+@media (max-width: 1600px) {
+  .freedom_volunteer {
+    height: 220vh;
+  }
+
+  .objects img:nth-child(11) {
+    top: 613vh;
+  }
 }
