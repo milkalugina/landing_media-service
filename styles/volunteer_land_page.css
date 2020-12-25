@@ -19,10 +19,15 @@
   font-weight: normal;
 }
 
-body {
-  overflow-x: hidden;s
+*, *:after, *:before {
+  box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden !important;
+  width: 100vw;
+  display: block;
+}
 
 h1 {
   font-family: 'Steinbeck';
@@ -32,6 +37,96 @@ h1 {
   line-height: 60px;
 }
 
+/* Изображения */
+.objects {
+  position: absolute;
+}
+
+.objects img {
+  overflow-x: hidden !important;
+}
+
+.objects img:nth-child(1) {
+  position: absolute;
+  height: 600px;
+  left: 70vw;
+  top: 15vh;
+}
+
+.objects img:nth-child(2) {
+  position: absolute;
+  height: 400px;
+  left: 10vw;
+  top: 75vh;
+}
+
+.objects img:nth-child(3) {
+  position: absolute;
+  height: 200px;
+  left: 71vw;
+  top: 15vh;
+}
+
+.objects img:nth-child(4) {
+  position: absolute;
+  height: 350px;
+  left: 65.5vw;
+  top: 53vh;
+}
+
+.objects img:nth-child(5) {
+  position: absolute;
+  height: 300px;
+  left: 71vw;
+  top: 85vh;
+}
+
+.objects img:nth-child(6) {
+  position: absolute;
+  height: 200px;
+  left: -25vw;
+  top: 213vh;
+}
+
+.objects img:nth-child(7) {
+  position: absolute;
+  height: 500px;
+  left: 85vw;
+  top: 340vh;
+}
+
+.objects img:nth-child(8) {
+  position: absolute;
+  height: 300px;
+  left: 90vw;
+  top: 400vh;
+}
+
+.objects img:nth-child(9) {
+  position: absolute;
+  height: 300px;
+  left: -15vw;
+  top: 460vh;
+  transform: rotate(90deg);
+}
+
+.objects img:nth-child(10) {
+  position: absolute;
+  height: 500px;
+  left: 85vw;
+  top: 510vh;
+  transform: rotate(90deg);
+}
+
+.objects img:nth-child(11) {
+  position: absolute;
+  height: 400px;
+  left: -8vw;
+  top: 580vh;
+  transform: rotate(40deg);
+}
+
+/* 1 блок */
 .main {
   padding: 0px, 60px;
   background-color: #233363;
