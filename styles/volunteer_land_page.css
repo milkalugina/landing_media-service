@@ -26,6 +26,8 @@ html {
 body {
   overflow-x: hidden !important;
   min-width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -894,6 +896,7 @@ footer .write_us {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 footer .write_us p {
@@ -901,7 +904,6 @@ footer .write_us p {
   font-family: 'Basis Grotesque Pro';
   font-style: normal;
   font-weight: normal;
-  margin-bottom: 100px;
   width: 700px;
   font-size: 25px;
   line-height: 105%;
@@ -1017,14 +1019,129 @@ footer .footer_data p {
 
 
 
-@media (max-width: 1600px) {
-  .freedom_volunteer {
-    height: 220vh;
+@media (max-width: 1450px) {
+
+  .objects img:nth-child(1) {
+    height: 500px;
+    left: 77vw;
+  }
+
+  .objects img:nth-child(3) {
+    left: 73vw;
+    top: 19vh;
+  }
+
+  .objects img:nth-child(4) {
+    height: 350px;
+    left: 70vw;
+    top: 53vh;
+  }
+
+  .objects img:nth-child(5) {
+    height: 250px;
+    left: 82.5vw;
+  }
+
+  .objects img:nth-child(6) {
+    height: 200px;
+    left: -25vw;
+    top: 260vh;
+  }
+
+  .objects img:nth-child(7) {
+    height: 350px;
+    left: 85vw;
+    top: 298vh;
+  }
+
+  .objects img:nth-child(8) {
+    left: 86vw;
+    top: 439.8vh;
+  }
+
+  .objects img:nth-child(9) {
+    top: 531vh;
   }
 
   .objects img:nth-child(11) {
-    top: 613vh;
+    top: 783vh;
   }
+  .objects img:nth-child(13) {
+    top: 1310vh;
+  }
+
+  .objects img:nth-child(14) {
+    top: 971vh;
+  }
+
+  .objects img:nth-child(15) {
+    top: 1471vh;
+  }
+
+  .objects img:nth-child(15) {
+    top: 1559vh;
+  }
+
+  .objects img:nth-child(16) {
+    opacity: 0;
+  }
+
+  .objects img:nth-child(17) {
+    top: 1559vh;
+  }
+
+  .objects img:nth-child(18) {
+    top: 1528vh;
+  }
+
+  .objects img:nth-child(19) {
+    top: 1629vh;
+  }
+
+  .objects img:nth-child(21) {
+    top: 1601vh;
+  }
+
+  .first_service {
+    height: 180vh;
+  }
+
+  .freedom_volunteer {
+    height: 270vh;
+  }
+
+  .about_possibilities {
+    height: 160vh;
+  }
+
+  .about_possibilities .options div {
+    margin-bottom: -10px;
+  }
+
+  .about_possibilities .options {
+    margin: 0px 100px;
+  }
+
+  .personal_account {
+    height: 100vh;
+  }
+
+  .security {
+    height: 155vh;
+  }
+
+  .partnership {
+    height: 300vh;
+  }
+
+  .community {
+    height: 150vh;
+  }
+
+  footer {
+    height: 110vh;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1244,5 +1361,29 @@ footer .footer_data p {
 
   footer .footer_data p {
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .objects {
+    display: none;
+  }
+
+  .navbar {
+    padding: 30px 20px 0px 30px;
+  }
+
+  .navbar p a img {
+    height: 40px;
+  }
+
+  .navbar .cta_button {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
