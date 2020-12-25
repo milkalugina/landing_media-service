@@ -185,7 +185,7 @@ h1 {
 
 .main .features {
   display: flex;
-  margin-left: 172px;
+  margin-left: 10vw;
   height: 80vh;
 }
 
@@ -568,4 +568,152 @@ footer .footer_data p {
   font-size: 20px;
   line-height: 105%;
   color: rgba(250, 241, 157, 0.6);
+}
+
+@media (max-width: 768px) {
+  h1, .capabilities h1, .what_to_do .registration .registration_about h1, .what_to_do .publish .publish_about h1, .what_to_do .candidates .candidates_about h1, .membership .price h1 {
+      font-family: 'Steinbeck';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 40px;
+  }
+
+  .objects img:nth-child(5) {
+    opacity: 0;
+  }
+
+  .objects img:nth-child(4) {
+    left: 59.5vw;
+  }
+
+  .objects img:nth-child(6) {
+    height: 300px;
+    top: 283vh;
+    left: 76vw;
+  }
+
+  .objects img:nth-child(7) {
+    opacity: 0;
+  }
+
+  .objects img:nth-child(8) {
+    height: 350px;
+    left: -46vw;
+    top: 375vh;
+  }
+
+  .objects img:nth-child(10) {
+    height: 400px;
+    left: 2vw;
+    top: 538vh;
+  }
+
+  .objects img:nth-child(11) {
+    height: 400px;
+    left: -10vw;
+    top: 453vh;
+  }
+
+  .objects img:nth-child(13) {
+    height: 200px;
+    left: 81vw;
+    top: 551vh;
+  }
+
+  .objects img:nth-child(14) {
+    opacity: 0;
+  }
+
+  .first_service {
+    padding-top: 100px;
+    height: 130vh;
+  }
+
+  .main .features h1 {
+    width: 500px;
+  }
+
+  .what_to_do .publish img {
+    margin-left: -170vw;
+  }
+
+  .what_to_do .registration .registration_about p, .what_to_do .publish .publish_about p, .what_to_do .candidates .candidates_about p {
+    width: 50vw;
+  }
+
+  .what_to_do {
+    height: 210vh;
+  }
+
+  .membership {
+    flex-direction: column;
+  }
+
+  .membership .price {
+    height: 100px;
+    margin-bottom: 50px;
+  }
+
+  .membership .what_get .what_get_about p:nth-child(1) {
+    width: 50vw;
+  }
+
+  .call_to_action {
+    height: 100vh;
+  }
+
+  .call_to_action h1 {
+    width: 500px;
+  }
+
+  .call_to_action .cta_button {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .call_to_action .cta_button a {
+    margin-bottom: 20px;
+    align-self: flex-end;
+  }
+
+  footer {
+    height: 105vh;
+  }
+
+  footer .main_links .navigation {
+    width: 80vw;
+  }
+
+  footer .write_us {
+    flex-direction: column;
+    padding-right: 20vw;
+  }
+
+  footer .write_us p {
+    margin-bottom: 30px;
+  }
+
+  footer .write_us a {
+    align-self: flex-end;
+    margin: 0px;
+  }
+
+  footer .main_links {
+    flex-direction: column;
+  }
+
+  footer .main_links .navigation {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  footer .footer_data {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  footer .footer_data p {
+    padding-bottom: 10px;
+  }
 }
