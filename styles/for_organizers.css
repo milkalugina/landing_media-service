@@ -26,6 +26,8 @@ html {
 body {
   overflow-x: hidden !important;
   min-width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -35,6 +37,7 @@ h1 {
   font-size: 60px;
   line-height: 60px;
 }
+p
 
 .objects {
   position: relative;
@@ -811,4 +814,103 @@ footer .footer_data p {
   footer .footer_data p {
     padding-bottom: 10px;
   }
+}
+
+@media (max-width: 380px) {
+
+
+  .objects {
+    display: none;
+  }
+
+  .navbar {
+    padding: 30px 20px 0px 30px;
+  }
+
+  .navbar p a img {
+    height: 40px;
+  }
+
+  .navbar .cta_button {
+    display: none;
+  }
+
+  h1, .capabilities h1, .what_to_do .registration .registration_about h1, .what_to_do .publish .publish_about h1, .what_to_do .candidates .candidates_about h1, .membership .price h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  p, .capabilities p, .what_to_do .registration .registration_about p, .what_to_do .publish .publish_about p, .what_to_do .candidates .candidates_about p, .what_to_do p:nth-child(1), .membership .what_get .what_get_about p {
+    font-size: 20px;
+    line-height: 105%;
+  }
+
+  .first_service {
+    height: 130vh;
+    padding-bottom: 50px;
+  }
+
+  .first_service .about_categories h1, .choice .choice_about h1, .limits–volunteering_about h1, .personal_account .account_info h1, .security .security_about p, .community .community_about h1, .community .community_about p, .call_to_action p, .call_to_action h1, footer .write_us p {
+    width: 80vw;
+  }
+
+  footer .main_links .contact_form h3 {
+    width: 80vw;
+  }
+
+  .first_service .categories {
+    margin: 0px 30px;
+  }
+
+  .first_service .categories h3 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .capabilities {
+    height: 100vh;
+  }
+
+  .what_to_do {
+    height: 270vh;
+  }
+
+  .what_to_do img,  .what_to_do .publish img, .what_to_do img {
+    height: 300px;
+  }
+
+  .what_to_do .publish img {
+    margin-left: -260vw;
+  }
+
+  .membership {
+    height: 140vh;
+  }
+
+  .membership .what_get .ready_btn {
+    padding-right: 0px;
+  }
+
+  .membership .what_get .ready_btn a, .call_to_action .cta_button a, footer .write_us a {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  footer {
+    height: 300vh;
+  }
+
+  footer .main_links .navigation {
+    flex-direction: column;
+  }
+
+  footer .main_links .navigation div {
+    margin-bottom: 30px;
+  }
+  footer .main_links .contact_form .contact_form_email p input {
+    font-size: 15px;
+  }
+
 }

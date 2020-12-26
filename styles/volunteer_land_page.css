@@ -1364,7 +1364,7 @@ footer .footer_data p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 380px) {
 
   .objects {
     display: none;
@@ -1386,4 +1386,133 @@ footer .footer_data p {
     font-size: 30px;
     line-height: 30px;
   }
+
+  p {
+    font-size: 20px;
+    line-height: 105%;
+  }
+
+  .first_service {
+    height: 130vh;
+    padding-bottom: 50px;
+  }
+
+  .first_service .about_categories h1, .choice .choice_about h1, .limits–volunteering_about h1, .personal_account .account_info h1, .security .security_about p, .community .community_about h1, .community .community_about p, .call_to_action p, .call_to_action h1, footer .write_us p {
+    width: 80vw;
+  }
+
+  .first_service .categories {
+    margin: 0px 30px;
+  }
+
+  .first_service .categories h3 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .freedom_volunteer {
+    height: 220vh;
+  }
+
+  .limits–volunteering_about {
+    margin-top: 100px;
+  }
+
+  .choice .timeline img {
+    width: 80vw;
+  }
+
+  .limits–volunteering .affairs img {
+    height: 300px;
+  }
+
+  .about_possibilities {
+    height: 280vh;
+  }
+
+  .personal_account {
+    height: 130vh;
+  }
+  .account_objects p {
+    font-size: 16px;
+  }
+
+  .account_objects {
+    margin-right: 10vw;
+  }
+
+  .account_objects .account_subscription, .account_objects .account_favorites, .account_objects .account_categories {
+    height: auto;
+  }
+
+  .security {
+    height: 160vh;
+  }
+
+  .security .security_posts img, .community .community_posts img {
+    height: 300px;
+  }
+
+  .partnership {
+    height: 390vh;
+  }
+
+  .statistics_vol, .statistics_org, .statistics_affairs, .statistics_money, .statistics_activities {
+    margin-bottom: 20px;
+  }
+
+  .statistics_vol_n, .statistics_org_n, .statistics_affairs_n, .statistics_money_n, .statistics_activities_n {
+    margin-bottom: 10px;
+    width: 50vw;
+  }
+
+  .statistics_vol h3, .statistics_org h3, .statistics_affairs h3, .statistics_money h3, .statistics_activities h3,  {
+    font-size: 18px;
+    line-height: 18px;
+    height: 40px;
+    width: 60vw;
+  }
+
+  .partnership .support h1 {
+    margin-bottom: 0px;
+  }
+
+  .partnership .partnership_statistics, .partnership .partnership_about {
+    margin-bottom: 40px;
+  }
+
+  .partnership .support .partner_logo_icn div img {
+    height: 100px;
+  }
+
+  .community {
+    height: 137vh;
+  }
+
+  a, .about_org .read_about_button a, .personal_account .join_button a, .choice .start_button a, .call_to_action .cta_button a, footer .write_us a {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .about_org h1 {
+    margin-bottom: 40px;
+  }
+
+  footer {
+    height: 300vh;
+  }
+
+  footer .main_links .navigation {
+    flex-direction: column;
+  }
+
+  footer .main_links .navigation div {
+    margin-bottom: 30px;
+  }
+  footer .main_links .contact_form .contact_form_email p input {
+    font-size: 15px;
+  }
+
 }
